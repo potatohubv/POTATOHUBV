@@ -1,0 +1,65 @@
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:'Poppins',sans-serif;
+  color:white;
+  overflow:hidden;
+}
+
+.bg{
+  position:fixed;
+  inset:0;
+  background:url('https://i.imgur.com/9XnZK8L.gif') center/cover no-repeat;
+  filter:blur(6px) brightness(.6);
+  z-index:-1;
+}
+
+.card{
+  width:380px;
+  max-width:92%;
+  margin:8vh auto;
+  background:rgba(0,0,0,.65);
+  padding:22px;
+  border-radius:20px;
+  text-align:center;
+  animation:fade .6s ease;
+}
+
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1}}
+
+h1{margin:0 0 15px;font-weight:700;letter-spacing:2px}
+
+input,button{
+  width:100%;
+  padding:12px;
+  margin:6px 0;
+  border-radius:12px;
+  border:none;
+  font-size:15px;
+}
+
+input{background:#111;color:#fff}
+
+.buttons{display:flex;gap:6px}
+
+button{
+  font-weight:600;
+  cursor:pointer;
+  transition:.2s;
+}
+
+button:active{transform:scale(.95)}
+
+.b6{background:linear-gradient(135deg,#00f5ff,#00aaff)}
+.b12{background:linear-gradient(135deg,#7cff00,#36ff00)}
+.b24{background:linear-gradient(135deg,#ffb300,#ff6a00)}
+
+.redeem{background:linear-gradient(135deg,#ff00ff,#9b00ff)}
+
+.keybox{margin-top:10px;padding:10px;background:rgba(255,255,255,.08);border-radius:12px}
+
+.timer{margin-top:10px;font-weight:600}
+
+.msg{margin-top:6px;font-weight:600}
+
+.credits{margin:6px 0}
